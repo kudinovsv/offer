@@ -1,0 +1,159 @@
+.offer {
+  background: #85a5d4;
+  font-family: Roboto, sans-serif;
+}
+
+.offer__tariffs {
+  width: 900px;
+  box-sizing: border-box;
+  margin: 100px auto;
+}
+
+.tariffs {
+  display: flex;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.27);
+}
+
+.tariffs__tariff {
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tariffs__tariff:hover {
+  background: #f6f6f6;
+}
+
+.tariff {
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: #5572d6;
+}
+
+.tariff__logo {
+  width: 70px;
+}
+
+.tariff__name {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 35px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.tariff__description {
+  color: #9b9da9;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 500;
+  max-width: 207px;
+  margin: 18px auto 0;
+}
+
+.tariff__price {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+}
+
+[class^="price__"] {
+  line-height: 67%;
+  font-weight: 500;
+}
+
+.price__currency {
+  font-size: 14px;
+  align-self: flex-start;
+  font-weight: 700;
+}
+
+.price__value {
+  font-size: 30px;
+}
+
+.price__period {
+  font-size: 13px;
+  align-self: flex-end;
+  margin-left: 3px;
+}
+
+@media (max-width: 950px) {
+  .offer__tariffs {
+    width: 327px;
+  }
+
+  .tariffs {
+    flex-direction: column;
+  }
+
+  .tariffs__tariff {
+    margin-bottom: 35px;
+  }
+
+  .tariffs__tariff:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 345px) {
+  .offer__tariffs {
+    width: 100%;
+  }
+
+  .tariff {
+    padding: 20px 9%;
+  }
+}
+
+.offer__confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.confirmation {
+  display: none; /* changes to flex in js */
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.confirmation__window {
+  margin: auto;
+  width: 357px;
+  box-sizing: border-box;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  font-size: 20px;
+}
+
+.confirmation__close-btn {
+  width: 15px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.confirmation__pay-btn {
+  background: #2a5aff;
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 10px 0;
+}
